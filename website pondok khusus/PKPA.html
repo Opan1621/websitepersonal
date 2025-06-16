@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pondok Khusus Putra al-Halimy</title>
+</head>
+<body>
+     <style>
+    /* Gaya Umum */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #d4fcd2;
+      color: #2e3b2e;
+    }
+
+    header {
+      background-color: #3e8144;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #d4fcd2, #e2ffe2);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h2, h3 {
+      margin-bottom: 20px;
+      color: #265c2e;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      width: 220px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #2e3b2e;
+      font-weight: bold;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0,128,0,0.2);
+      color: #3e8144;
+    }
+
+    /* Formulir */
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      gap: 15px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+    }
+
+    button {
+      background-color: #3e8144;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #2e5d30;
+    }
+
+    footer {
+      background: #3e8144;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Halaman Jurusan */
+    .jurusan-detail {
+      margin-top: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Pondok Khusus Putra Al-Halimy</h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#jurusan">Jurusan</a>
+      <a href="#pendaftaran">Pendaftaran</a>
+      <a href="#Biaya Pendaftaran"> Biaya Pendaftaran</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="beranda" class="hero">
+    <h2>Selamat Datang di <br>Pondok Khusus Putra Al-Halimy</h2>
+    <p align="left">    Pondok khusus Al-Halimy merupakan bagian dari Yayasan Pendidikan Al-Halimy yang dikelola khusus untuk mengembangkan amanah sebagai wadah pendidikan yang bertujuan untuk menghasilkan generasi dan lulusan Islam yang mampu membaca dan memahami kajian kitab kuning (Tafaqquh Fiddin).
+
+    Pondok Khusus didirikan pada tahun 1990 sebagai salah satu bentuk pengembangan dari Yayasan Pendidikan Al-Halimy yang memadukan antara sistem pendidikan pesantren Salaf dan sistem pendidikan modern. Sistem pendidikan Salaf tampak dalam pengajaran sehari-hari yaitu dengan sistem halaqah dengan metode sorogan dan wetonan dalam proses pengajaran kitab kuning. Sedangkan sistem pendidikan modern tercermin dalam sistem klasikal dengan memadukan beberapa mata pelajaran yang menunjang dan kapasitas keilmuan Santri.
+
+Alumni Pondok Khusus Putra Al-Halimy diharapkan mampu berkompetensi dalam percaturan dunia yang semakin menggelobal, membangun budaya Islam yang berlandaskan Ahlussunnah Wal Jamaah sesuai dengan tuntunan para alim ulama serta menciptakan generasi yang taat pada perintah Allah Swt, dan Rasulullah Saw.
+</p>
+  </section>
+
+  <!-- JURUSAN -->
+  <section id="jurusan" class="section">
+    <h3>Dar Unggulan</h3>
+    <div class="cards">
+      <a href="#Dar Al-Qur'an" class="card">Dar Al-Qur'an</a>
+      <a href="#Dar Al-Hadits" class="card">Dar Al-Hadits</a>
+      <a href="#Dar An-Nuhat" class="card">Dar An-Nuhat</a>
+      <a href="#Dar Al-Fuqoha'" class="card">Dar Al-Fuqoha'</a>
+      <a href="#Dar As-Syamili" class="card">Dar As-Syamili</a>
+    </div>
+  </section>
+
+  <!-- DETAIL JURUSAN -->
+  <div id="Dar Al-Qur'an" class="jurusan-detail">
+    <h3>Dar Al-Qur'an</h3>
+    <p>Dar Al-Qur'an adalah kelas yang mendalami ilmu ilmu Al-Qur'an dan memahami secara utuh fragmen-fragmen keilmuan yang menunjuang pemahaman terhadap Al-Qur'an.</p>
+  </div>
+
+  <div id="Dar Al-Hadits" class="jurusan-detail">
+    <h3>dar Al-Hadits</h3>
+    <p>Dar Al-Hadits adalah kelas yang memfokuskan perhatian terhadap ilmu ilmu Hadits, menghafal dan memahami kandungan dari Hadits Rasulullah Saw, serta memperdalam ilmu ilmu yang menunjang pemahaman terhadap hadits. </p>
+  </div>
+
+  <div id="Dar An-Nuhat" class="jurusan-detail">
+    <h3>Dar An-Nuhat</h3>
+    <p>Dar An-Nuhat adalah kelas yang fokus mendalami ilmu Nahwu dan ilmu alat lainnya sebagai landasan memahami ilmu-ilmu lain sehingga mampu mencetak generasi penerus yang dapat mengkaji kitab-kitab klasik dan modern dan menuliskan kitab-kitab yang sesuai dengan gramatika sastra bahasa Arab.
+.</p>
+  </div>
+
+  <div id="Dar Al-Fuqoha'" class="jurusan-detail">
+    <h3>Dar Al-Fuqoha'</h3>
+    <p>Dar Al-Fuqoha' adalah kelas yang mendalami ilmu fiqh dan ushul figh dengan kajian-kajian kitab-kitab fiqih yang bersumber dari para ulama Salafussaleh sehingga diharapkan dapat mencetak para Fuqoha' yang mumpuni di bidangnya.</p>
+  </div>
+   <div id="Dar As-Syamili" class="jurusan-detail">
+    <h3>Dar As-Syamili</h3>
+    <p>Dar As-Syamili adalah kelas yang mempelajari semua kompenen 4 dar sebelumnya mulai dari Al-Qur'an, Hadits, Fuqoha dan Nuhat serta ilmu-ilmu pendukung lainnya. harapanya agar santri memahami semua disiplin ilmu agama Islam</p>
+  </div>
+
+  <!-- PENDAFTARAN -->
+  <section id="pendaftaran" class="section">
+    <h3>Formulir Pendaftaran Santri Baru</h3>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="text" placeholder="Tempat Tanggal Lahir" required>
+      <input type="text" placeholder="Nama Lengkap Ayah" required>
+      <input type="text" placeholder="Nama Lengkap Ibu" required>
+      <input type="text" placeholder="Asal Sekolah" required>
+      <input type="text" placeholder="NIS/NISN" required>
+      <input type="text" placeholder="NIK (Nomor Induk Kependudukan)" required>
+      <input type="email" placeholder="Email Aktif" required>
+      <input type="tel" placeholder="Nomor HP / WhatsApp" required>
+      <select required>
+        <option value="">Pilih Dar</option>
+        <option value="Dar Al-Qur'an">Dar Al-Qur'an</option>
+        <option value="Dar Al-hadits">Dar Al-Hadits</option>
+        <option value="Dar An-Nuhat">Dar An-Nuhat</option>
+        <option value="Dar Al-Fuqoha'">Dar Al-Fuqoha'</option>
+        <option value="Dar As-Syamili">Dar As-Syamili</option>
+      </select>
+      <textarea rows="4" placeholder="Alamat Lengkap" required></textarea>
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+  </section>
+
+ <br><br>
+  <!-- BIAYA PENDAFTARAN -->
+
+  <header>
+   <h1 id="Biaya Pendaftaran">Rincian Biaya Pendaftaran</h1>
+  </header>
+  <main>
+    <section>
+      <table class="biaya-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Komponen</th>
+            <th>Biaya</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Pendaftaran</td><td>Rp. 100.000</td></tr>
+          <tr><td>2</td><td>Daftar Ulang</td><td>Rp. 150.000</td></tr>
+          <tr><td>3</td><td>Kitab</td><td>Rp. 300.000</td></tr>
+          <tr><td>4</td><td>Kos (Bulan Awal)</td><td>Rp. 450.000</td></tr>
+          <tr><td>5</td><td>Seragam Pondok</td><td>Rp. 500.000</td></tr>
+          <tr><td>6</td><td>Kesehatan</td><td>Rp. 250.000</td></tr>
+          <tr><td>7</td><td>Infak Bangunan</td><td>Rp. 450.000</td></tr>
+          <tr><td>8</td><td>Olahraga</td><td>Rp. 200.000</td></tr>
+          <tr><td>9</td><td>Lemari</td><td>Rp. 1.000.000</td></tr>
+          <tr><td>10</td><td>Almamater Yayasan</td><td>Rp. 150.000</td></tr>
+          <tr><td>11</td><td>Perpustakaan</td><td>Rp. 100.000</td></tr>
+          <tr><td>12</td><td>Pengadaan Alat Dapur</td><td>Rp. 150.000</td></tr>
+          <tr><td>13</td><td>Pembebasan Lahan</td><td>Rp. 200.000</td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td><p><h4>Total Biaya Pendaftaran = 4.100.000</h4></p></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+   <footer>
+    &copy; 2025 Pondok Khusus Putra Al-Halimy. Seluruh Hak Dilindungi
+  </footer>
+</body>
+</html>
